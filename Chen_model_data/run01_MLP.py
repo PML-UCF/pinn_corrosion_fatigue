@@ -79,11 +79,11 @@ def scalar(pred,y):
 
 def built_model():
     model = tf.keras.Sequential([Dense(4, input_shape = [4], trainable = False),
-    Dense(60, activation = 'relu'),
-    Dense(30, activation = 'relu'),
-    Dense(15, activation = 'relu'),
-    Dense(5, activation = 'relu'),
-    Dense(2)
+    Dense(60),
+    Dense(30),
+    Dense(15),
+    Dense(5),
+    Dense(2, activation = 'softplus')
     ])
 
     optimizer = tf.keras.optimizers.RMSprop(0.001)
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     
     model.summary()
     
-    history = model.fit(norm_input, norm_output, epochs = 10, steps_per_epoch = 10)
+    history = model.fit(norm_input, norm_output, epochs = 20)
     
 # =============================================================================
 #     model.save_weights('Corr_MLP_weights.h5')
