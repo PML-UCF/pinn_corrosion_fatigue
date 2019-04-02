@@ -107,6 +107,8 @@ if __name__ == "__main__":
 
     model.save_weights('corr_mlp_weights.h5')
     
+    model.save('Corr_MLP.h5')
+    
     training_loss = history.history['loss']
 
     dfval = pd.read_csv('corr_MLP_val.csv')
