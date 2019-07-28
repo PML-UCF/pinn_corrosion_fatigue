@@ -74,7 +74,7 @@ def prop_model(input_location, input_scale, dtype):
     L2 = Dense(20, activation = 'elu')
     L3 = Dense(10, activation = 'elu')
     L4 = Dense(5, activation = 'elu')
-    L5 = Dense(1, activation = 'softplus', trainable = False)
+    L5 = Dense(1, activation = 'elu', trainable = False)
     model = tf.keras.Sequential([dLInputScaling,L1,L2,L3,L4,L5], name = 'c_mlp')
     
     optimizer = tf.keras.optimizers.RMSprop(1e-3)
@@ -86,13 +86,11 @@ def prop_model(input_location, input_scale, dtype):
 if __name__ == "__main__":
     myDtype = tf.float32
     
-    dft = pd.read_csv('MLP_input_training_data.csv', index_col = None) # loading training data 
+    dft = pd.read_csv('MLP_training_data.csv', index_col = None) # loading training data 
                                                                       # generated from random planes
     inputs = dft[['R','cidx']]
-    
-    dfo = pd.read_csv('MLP_logC_training.csv', index_col = None)
         
-    out_prop = dfo[['logC']]
+    out_prop = np.log(dft[['C']])
     #--------------------------------------------------------------------------
     # The following block is related to scaling the inputs of the MLP
     input_location = np.asarray(inputs.min(axis=0))
@@ -105,13 +103,11 @@ if __name__ == "__main__":
     out_prop_scale = 1/out_prop_range
     #--------------------------------------------------------------------------
     # Loading MLP validation data
-    dfval = pd.read_csv('MLP_input_val_data.csv', index_col = None)
+    dfval = pd.read_csv('MLP_val_data.csv', index_col = None)
     
     inputs_val = dfval[['R','cidx']]
     
-    dfvalo = pd.read_csv('MLP_logC_val.csv', index_col = None)
-    
-    out_prop_val = dfvalo[['logC']]
+    out_prop_val = np.log(dfval[['C']])
     #--------------------------------------------------------------------------
     out_prop_val_min = np.asarray(out_prop_val.min(axis=0))
     out_prop_val_range = np.asarray(out_prop_val.max(axis=0)) - np.asarray(out_prop_val.min(axis=0))
@@ -121,7 +117,7 @@ if __name__ == "__main__":
         
     model_prop.summary()
     
-    hist_prop = model_prop.fit(inputs, out_prop_norm, epochs = 25, 
+    hist_prop = model_prop.fit(inputs, out_prop_norm, epochs = 50, 
                         validation_data = (inputs_val,out_prop_val_norm),verbose = 1) 
     
     training_loss_prop = hist_prop.history['loss']    

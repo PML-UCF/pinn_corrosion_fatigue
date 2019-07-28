@@ -70,7 +70,7 @@ def prop_model(input_location, input_scale, dtype):
     dLInputScaling = getScalingDenseLayer(input_location, input_scale, dtype)
     L1 = Dense(10)
     L2 = Dense(5)
-    L3 = Dense(1, activation = 'linear', trainable = True)
+    L3 = Dense(1, activation = 'linear', trainable = False)
     model = tf.keras.Sequential([dLInputScaling,L1,L2,L3], name = 'm_mlp')
     
     optimizer = tf.keras.optimizers.RMSprop(1e-3)
@@ -82,13 +82,11 @@ def prop_model(input_location, input_scale, dtype):
 if __name__ == "__main__":
     myDtype = tf.float32
     
-    dft = pd.read_csv('MLP_input_training_data.csv', index_col = None) # loading training data 
+    dft = pd.read_csv('MLP_training_data.csv', index_col = None) # loading training data 
                                                                       # generated from random planes
     inputs = dft[['R','cidx']]
-    
-    dfo = pd.read_csv('MLP_m_training.csv', index_col = None)
         
-    out_prop = dfo[['m']]
+    out_prop = dft[['m']]
     #--------------------------------------------------------------------------
     # The following block is related to scaling the inputs of the MLP
     input_location = np.asarray(inputs.min(axis=0))
@@ -101,13 +99,11 @@ if __name__ == "__main__":
     out_prop_scale = 1/out_prop_range
     #--------------------------------------------------------------------------
     # Loading MLP validation data
-    dfval = pd.read_csv('MLP_input_val_data.csv', index_col = None)
+    dfval = pd.read_csv('MLP_val_data.csv', index_col = None)
     
     inputs_val = dfval[['R','cidx']]
     
-    dfvalo = pd.read_csv('MLP_m_val.csv', index_col = None)
-    
-    out_prop_val = dfvalo[['m']]
+    out_prop_val = dfval[['m']]
     #--------------------------------------------------------------------------
     out_prop_val_min = np.asarray(out_prop_val.min(axis=0))
     out_prop_val_range = np.asarray(out_prop_val.max(axis=0)) - np.asarray(out_prop_val.min(axis=0))
