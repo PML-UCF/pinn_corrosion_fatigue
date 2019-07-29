@@ -99,10 +99,10 @@ if __name__ == "__main__":
     F = 2.8   # geometry factor for the stress intensity layer  
     #--------------------------------------------------------------------------    
     # Loading plane MLP     
-    MLP_C_p = tf.keras.models.load_model('log_C_MLP.h5')
+    MLP_C_p = tf.keras.models.load_model('log_C_MLP_ex.h5')
     MLP_C_p.trainable = False
     
-    MLP_m_p = tf.keras.models.load_model('m_MLP.h5')
+    MLP_m_p = tf.keras.models.load_model('m_MLP_ex.h5')
     MLP_m_p.trainable = False
     
     model = create_model(MLP_C_p, MLP_m_p, low_C, up_C, low_m, up_m, F, a0RNN, 

@@ -102,5 +102,5 @@ def create_model(MLP_C_layer, MLP_m_layer, low_C, up_C, low_m, up_m, F, a0RNN, b
     
     model = tf.keras.Sequential()
     model.add(CDMRNNhybrid)
-    model.compile(loss='mse', optimizer=tf.keras.optimizers.RMSprop(learning_rate = 1e-9), metrics=['mae'])
+    model.compile(loss='mse', optimizer=tf.keras.optimizers.RMSprop(learning_rate = 1e-6), metrics=['mae'])
     return model

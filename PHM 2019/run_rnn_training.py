@@ -58,8 +58,6 @@ from tensorflow.python.framework import ops
 
 from corr_model import create_model
 
-np.random.seed(31)
-
 if __name__ == "__main__":
     start = time.time()
     #--------------------------------------------------------------------------
@@ -118,7 +116,7 @@ if __name__ == "__main__":
     model = create_model(MLP_C_layer, MLP_m_layer, low_C, up_C, low_m, up_m, F, a0RNN, 
                          batch_input_shape, selectaux, selectdk, myDtype)
    #--------------------------------------------------------------------------
-    EPOCHS = 250
+    EPOCHS = 50
     
     checkpoint_path = "training_20_pts/cp.ckpt"
     checkpoint_dir = os.path.dirname(checkpoint_path)
