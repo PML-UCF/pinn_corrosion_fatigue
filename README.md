@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/178286276.svg)](https://zenodo.org/badge/latestdoi/178286276)
 # Corrosion-fatigue Crack Propagation with Physics-informed Neural Networks
 
 This repository is provided for replication of results presented in the article:
