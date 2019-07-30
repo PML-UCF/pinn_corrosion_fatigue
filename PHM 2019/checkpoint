@@ -1,2 +1,0 @@
-model_checkpoint_path: "rnn_weights_20pt.h5py"
-all_model_checkpoint_paths: "rnn_weights_20pt.h5py"
