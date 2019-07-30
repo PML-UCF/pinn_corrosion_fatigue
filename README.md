@@ -6,7 +6,7 @@ A. Dourado and F.A.C. Viana, "Physics-Informed Neural Networks for Corrosion-Fat
 
 This repository includes the following sets of the code under PHM 2019:
 
-run00_MLP_data_generation: generates a plane approximation for MLPs training.
+corrosion_fatigue_model: contain the proposed RNN framework.
 
 run00_MLP_logC_training: file that trains the MLP for the logC estimation.
 
@@ -22,3 +22,9 @@ In order to run the codes, you will need to:
 Install the PINN python package: https://github.com/PML-UCF/pinn
 
 Download the datasets at: De Piemonte Dourado, Arinan; Viana, Felipe, 2019, "Replication Data for: PINN corrosion-fatigue_PHM 2019", https://doi.org/10.7910/DVN/PZ7DRJ, Harvard Dataverse, V1, and extract files to the directory where this repository is cloned.
+
+Disclosures:
+
+In the paper, we described a procedure for the MLPs training initialization revolving around random planes. For simplicity this procedure is not reproduced here, we rather opt to use an illustrative plane whose data values are expressed in the "MLP_training_data.csv" and "MLP_val_data.csv" files. 
+
+The goal in this example is to illustrate the RNN presented in the referred citation (Dourado and Viana PHM 2019). We didn't pursue in this example optimizing the training parameters (MLP configureation, learning-rate, number of epochs) to accurately reproduce the results illustrated in the manuscript. But, we strongly encourage the user to experiment with the code in order to reproduce or even surpass the mentioned results.  
