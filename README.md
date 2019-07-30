@@ -7,10 +7,15 @@ A. Dourado and F.A.C. Viana, "Physics-Informed Neural Networks for Corrosion-Fat
 This repository includes the following sets of the code under PHM 2019:
 
 run00_MLP_data_generation generates a plane approximation for MLPs training.
+
 run00_MLP_logC_training file that trains the MLP for the logC estimation.
+
 run00_MLP_m_training file that trains the MLP for Walker's model exponent (m) estimation.
+
 run01_rnn_training trains the proposed RNN using the pre-trained MLPs
+
 run02_rnn_prediction predicts the crack length in the wing panels of the entire fleet at the 7 year (or 20.000 flights) of operation. 
+
 
 In order to run the codes, you will need to:
 
