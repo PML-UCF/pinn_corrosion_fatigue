@@ -31,8 +31,8 @@ Please, cite this repository using:
         doi       = {10.5281/zenodo.3355729},
         version   = {0.0.1},
         publisher = {Zenodo},
-        url       = {https://doi.org/10.5281/zenodo.3355729}
+        url       = {https://github.com/PML-UCF/pinn_corrosion_fatigue}
         }
   The corresponding reference entry should look like:
 
-    A. Dourado and F. A. C. Viana, Python Scripts for Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis, v0.0.1, Zenodo, https://doi.org/10.5281/zenodo.3355729.
+    A. Dourado and F. A. C. Viana, Python Scripts for Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis, v0.0.1, Zenodo, https://github.com/PML-UCF/pinn_corrosion_fatigue, doi:10.5281/zenodo.3355729.
