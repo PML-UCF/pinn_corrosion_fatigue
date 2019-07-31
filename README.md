@@ -25,13 +25,13 @@ Please, cite this repository using:
 
     @misc{2019_dourado_viana_corrosion_fatigue_data,
         author    = {A. Dourado and F. A. C. Viana},
-        title        = {Replication data for {PINN} corrosion-fatigue {PHM 2019},
-        month    = Aug,
-        year        = 2019,
-        doi          = {10.5281/zenodo.3355729},
-        version      = {0.0.1},
-        publisher    = {Zenodo},
-        url          = {https://doi.org/10.5281/zenodo.3355729}
+        title     = {Replication data for {PINN} corrosion-fatigue {PHM 2019},
+        month     = Aug,
+        year      = 2019,
+        doi       = {10.5281/zenodo.3355729},
+        version   = {0.0.1},
+        publisher = {Zenodo},
+        url       = {https://doi.org/10.5281/zenodo.3355729}
         }
   The corresponding reference entry should look like:
 
