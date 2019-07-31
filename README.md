@@ -1,5 +1,5 @@
 [![DOI](https://zenodo.org/badge/178286276.svg)](https://zenodo.org/badge/latestdoi/178286276)
-# Corrosion-fatigue Crack Propagation with Physics-informed Neural Networks
+# Python Scripts for Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis
 
 This repository is provided for replication of results presented in the article:
 
@@ -25,7 +25,7 @@ Please, cite this repository using:
 
     @misc{2019_dourado_viana_corrosion_fatigue_data,
         author    = {A. Dourado and F. A. C. Viana},
-        title     = {Replication data for {PINN} corrosion-fatigue {PHM 2019},
+        title     = {Python Scripts for Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis},
         month     = Aug,
         year      = 2019,
         doi       = {10.5281/zenodo.3355729},
@@ -35,4 +35,4 @@ Please, cite this repository using:
         }
   The corresponding reference entry should look like:
 
-    A. Dourado and F. A. C. Viana, Replication data for PINN corrosion-fatigue PHM 2019, v0.0.1, Zenodo, https://doi.org/10.5281/zenodo.3355729.
+    A. Dourado and F. A. C. Viana, Python Scripts for Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis, v0.0.1, Zenodo, https://doi.org/10.5281/zenodo.3355729.
