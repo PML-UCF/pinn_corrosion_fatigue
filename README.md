@@ -23,7 +23,7 @@ In the paper, we described a procedure for the multilayer perceptron initializat
 
 Please, cite this repository using: 
 
-    @misc{2019_dourado_viana_corrosion_fatigue_data,
+    @misc{2019_dourado_viana_python_corrosion_fatigue,
         author    = {A. Dourado and F. A. C. Viana},
         title     = {Python Scripts for Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis},
         month     = Aug,
