@@ -3,7 +3,7 @@
 
 This repository is provided for replication of results presented in the article:
 
-A. Dourado and F. A. C. Viana, "Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis," Proceedings of the Annual Conference of the PHM Society 2019
+A. Dourado and F. A. C. Viana, "Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis," Proceedings of the Annual Conference of the PHM Society, Scottsdale,USA, September 21-26, 2019.
 
 This repository includes the following codes under PHM 2019:
 - **corrosion_fatigue_model.py**: contains function that creates the proposed recurrent neural network.
