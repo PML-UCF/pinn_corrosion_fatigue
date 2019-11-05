@@ -182,10 +182,8 @@ if __name__ == "__main__":
     arch = np.linspace(0,7,8,dtype = int)
     planes = np.linspace(1,19,19,dtype = int)
     
-    cont = 0
     for ii in tqdm(arch):
-        aux = planes[cont]
-        for jj in aux:
+        for jj in planes:
             # Loading MLP info and parameters
             inputs = np.column_stack((dfcrl[str(jj)],dfdSl[str(jj)]))
             inputs = np.column_stack((inputs,dfRl[str(jj)]))
@@ -248,7 +246,6 @@ if __name__ == "__main__":
             plt.savefig('Plots/training_arch'+str(ii)+'_plane_'+str(jj)+'.png')
             plt.close()
         
-        cont+=1
         backend.clear_session()
         
     print('Elapsed time is %s seconds'%(time.time()-start))
