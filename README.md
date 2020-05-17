@@ -7,7 +7,7 @@ This repository is provided for replication of results presented in:
 
 - A. Dourado and F. A. C. Viana, "Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis," Proceedings of the Annual Conference of the PHM Society, Scottsdale,USA, September 21-26, 2019.
 
-This repository includes the following codes under PHM 2019:
+This repository includes the following:
 - **corrosion_fatigue_model.py**: contains function that creates the proposed recurrent neural network.
 - **run00_MLP_logC_training.py**: file that trains the multilayer perceptron for the logC estimation.
 - **run00_MLP_m_training.py**: file that trains the multilayer perceptron for Walker's model exponent (m) estimation.
