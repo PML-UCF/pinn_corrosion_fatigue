@@ -5,6 +5,8 @@ This repository is provided for replication of results presented in:
 
 - A. Dourado and F. A. C. Viana, "[Physics-informed neural networks for missing physics estimation in cumulative damage models: a case study in corrosion fatigue](https://asmedigitalcollection.asme.org/computingengineering/article-abstract/doi/10.1115/1.4047173/1083614/Physics-informed-neural-networks-for-missing)," ASME Journal of Computing and Information Science in Engineering, Online first, 2020. (DOI: 10.1115/1.4047173).
 
+- A. Dourado and F. A. C. Viana, "[Physics-informed neural networks for bias compensation in corrosion-fatigue](https://arc.aiaa.org/doi/abs/10.2514/6.2020-1149)," AIAA SciTech Forum, Orlando, USA, January 6-10, 2020, AIAA 2020-1149 (DOI: 10.2514/6.2020-1149).
+
 - A. Dourado and F. A. C. Viana, "[Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis](http://phmpapers.org/index.php/phmconf/article/view/814)," Proceedings of the Annual Conference of the PHM Society, Scottsdale,USA, September 21-26, 2019.
 
 In order to run the codes, you will need to install the PINN python package: https://github.com/PML-UCF/pinn.
