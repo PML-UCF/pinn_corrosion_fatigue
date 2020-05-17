@@ -7,9 +7,7 @@ This repository is provided for replication of results presented in:
 
 - A. Dourado and F. A. C. Viana, "[Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis](http://phmpapers.org/index.php/phmconf/article/view/814)," Proceedings of the Annual Conference of the PHM Society, Scottsdale,USA, September 21-26, 2019.
 
-In order to run the codes, you will need to:
-1. Install the PINN python package: https://github.com/PML-UCF/pinn
-2. Download the datasets at: De Piemonte Dourado, Arinan; Viana, Felipe, 2019, "Replication Data for: PINN corrosion-fatigue_PHM 2019", https://doi.org/10.7910/DVN/PZ7DRJ, Harvard Dataverse, V1, and extract files to the directory where this repository is cloned.
+In order to run the codes, you will need to install the PINN python package: https://github.com/PML-UCF/pinn.
 
 ## Citing this repository
 
