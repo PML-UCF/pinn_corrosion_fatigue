@@ -3,7 +3,7 @@
 
 This repository is provided for replication of results presented in:
 
-- A. Dourado and F. A. C. Viana, "Physics-informed neural networks for missing physics estimation in cumulative damage models: a case study in corrosion fatigue," ASME Journal of Computing and Information Science in Engineering, Online first, 2020. (DOI: 10.1115/1.4047173).
+- A. Dourado and F. A. C. Viana, "[Physics-informed neural networks for missing physics estimation in cumulative damage models: a case study in corrosion fatigue](https://asmedigitalcollection.asme.org/computingengineering/article-abstract/doi/10.1115/1.4047173/1083614/Physics-informed-neural-networks-for-missing)," ASME Journal of Computing and Information Science in Engineering, Online first, 2020. (DOI: 10.1115/1.4047173).
 
 - A. Dourado and F. A. C. Viana, "Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis," Proceedings of the Annual Conference of the PHM Society, Scottsdale,USA, September 21-26, 2019.
 
