@@ -3,6 +3,8 @@
 
 Welcome to the PML repository for physics-informed neural networks used in corrosion-fatigue prognosis. We will use this repository to disseminate our research in this exciting topic.
 
+In order to run the codes, you will need to install the PINN python package: https://github.com/PML-UCF/pinn.
+
 ## Citing this repository
 
 Please, cite this repository using: 
@@ -30,6 +32,4 @@ Over time, the following publications out of the PML-UCF research group used/ref
 - A. Dourado and F. A. C. Viana, "[Physics-informed neural networks for bias compensation in corrosion-fatigue](https://arc.aiaa.org/doi/abs/10.2514/6.2020-1149)," AIAA SciTech Forum, Orlando, USA, January 6-10, 2020, AIAA 2020-1149 (DOI: 10.2514/6.2020-1149).
 
 - A. Dourado and F. A. C. Viana, "[Physics-Informed Neural Networks for Corrosion-Fatigue Prognosis](http://phmpapers.org/index.php/phmconf/article/view/814)," Proceedings of the Annual Conference of the PHM Society, Scottsdale,USA, September 21-26, 2019.
-
-In order to run the codes, you will need to install the PINN python package: https://github.com/PML-UCF/pinn.
 
