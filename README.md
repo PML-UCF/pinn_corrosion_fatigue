@@ -27,7 +27,7 @@ A. Dourado and F. A. C. Viana, Python Scripts for Physics-Informed Neural Networ
 
 Over time, the following publications out of the PML-UCF research group used/referred to this repository:
 
-- A. Dourado, F. A. C. Viana, "[Ensemble of hybrid neural networks to compensate for epistemic uncertainties: a case study in system prognosis](https://link.springer.com/article/10.1007/s00500-022-07129-1)," Soft Computing, Online first, 2022. (DOI: 10.1007/s00500-022-07129-1). 
+- A. Dourado, F. A. C. Viana, "[Ensemble of hybrid neural networks to compensate for epistemic uncertainties: a case study in system prognosis](https://link.springer.com/article/10.1007/s00500-022-07129-1)," Soft Computing, Vol. 26 (13), pp. 6157-6173, 2022. (DOI: 10.1007/s00500-022-07129-1). 
 
 - A. Dourado and F. A. C. Viana, "[Physics-informed neural networks for missing physics estimation in cumulative damage models: a case study in corrosion fatigue](https://asmedigitalcollection.asme.org/computingengineering/article-abstract/doi/10.1115/1.4047173/1083614/Physics-informed-neural-networks-for-missing)," ASME Journal of Computing and Information Science in Engineering, Online first, 2020. (DOI: 10.1115/1.4047173).
 
